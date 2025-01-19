@@ -2,6 +2,7 @@ import sys
 import os
 from flask import Flask
 
+
 # 動態將 project 根目錄加入 sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
