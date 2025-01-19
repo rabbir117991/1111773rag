@@ -6,6 +6,10 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 from langchain.chat_models import ChatOpenAI
 from opencc import OpenCC
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 # 確保環境變數中包含 OPENAI_API_KEY
 openai_api_key = os.getenv('OPENAI_API_KEY')
